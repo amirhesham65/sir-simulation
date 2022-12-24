@@ -1,0 +1,10 @@
+#graph-sim-div {
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+}
+
+canvas {
+    opacity: 0.5;
+}
+
