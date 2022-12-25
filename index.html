@@ -4,18 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIR Model</title>
+    <title>Gene Z - SIR Model Simulation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/icon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon.ico/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/icon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
-<body class="h-full bg-gray-700">
-    <div class="min-h-full">
+<body class=" bg-gray-700">
+    <div class="">
         <nav class="bg-gray-800">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
               <div class="flex items-center">
                 <div class="flex-shrink-0">
-                  <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+                  <img class="h-8 w-8" src="images/virus.png" alt="Your Company">
                 </div>
                 <div class="hidden md:block">
                   <div class="ml-10 flex items-baseline space-x-4">
@@ -29,12 +47,12 @@
               </div>
               <div class="hidden md:block">
                 <div class="ml-4 flex items-center md:ml-6">
-                  <button type="button" class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                  <a target="_blank" href="https://github.com/amirhesham65/sir-simulation" class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                     <span class="sr-only">View on Github</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="currentColor" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="-mr-2 flex md:hidden">
@@ -98,7 +116,7 @@
                     <div class="grid grid-cols-1 gap-4 lg:col-span-2">
                       <section aria-labelledby="section-1-title">
                         <h2 class="sr-only" id="section-1-title">Section title</h2>
-                        <div class="rounded-lg bg-gray-800 overflow-hidden shadow w-full h-full">
+                        <div class="rounded-lg bg-gray-800 overflow-hidden shadow w-full">
                           <div class="p-6">
                             <div id="sirsim-container">
                             </div>
