@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,8 +26,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
-<body class="bg-gray-700 h-full">
-    <div class="h-full">
+<body class="bg-gray-700">
         <nav class="bg-gray-800">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
@@ -40,10 +39,10 @@
                 <div class="hidden md:block">
                   <div class="ml-10 flex items-baseline space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="/index.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Simulation</a>
+                    <a href="/index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Simulation</a>
                     <a href="/covid.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">COVID-19</a>
                     <a href="/sir.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">SIR Model</a>
-                    <a href="/about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="/about.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page" >About</a>
                   </div>
                 </div>
               </div>
@@ -86,10 +85,10 @@
           <div class="hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/index.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Simulation</a>
+              <a href="/index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Simulation</a>
               <a href="/covid.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">COVID-19</a>
               <a href="/sir.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">SIR Model</a>
-              <a href="/about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+              <a href="/about.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page" >About</a>
               <a href="https://github.com/amirhesham65/sir-simulation" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium flex ">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -103,108 +102,67 @@
       
         <header class="bg-gray-800 shadow">
           <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold tracking-tight text-white">Simulation</h1>
+            <h1 class="text-3xl font-bold tracking-tight text-white">About</h1>
           </div>
         </header>
-        <main>
-          <div class="mx-auto max-w-8xl py-6">
-            <!-- Replace with your content -->
-            <main class="pb-8">
-                <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                  <h1 class="sr-only">Page title</h1>
-                  <!-- Main 3 column grid -->
-                  <div class="grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8">
-                    <!-- Left column -->
-                    <div class="grid grid-cols-1 gap-4 lg:col-span-2">
-                      <section aria-labelledby="section-1-title">
-                        <h2 class="sr-only" id="section-1-title">Section title</h2>
-                        <div class="rounded-lg bg-gray-800 overflow-hidden shadow w-full">
-                          <div class="p-6">
-                            <div id="sirsim-container">
-                            </div>
+        
+      <main class="max-w-3xl mx-auto">
+<div class="relative py-16 overflow-hidden">
+  
+  <div class="relative px-4 sm:px-6 lg:px-8">
+    <div class="text-lg max-w-prose mx-auto">
+      <h1>
+        <span class="block text-base text-center text-indigo-300 font-semibold tracking-wide uppercase">About project</span>
+        <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-white sm:text-4xl">Modeling COVID-19 Spread using SIR model and Evolution</span>
+      </h1>
+      <p class="mt-8 text-xl text-gray-100 leading-8 text-center">This project is a part of the MTH-2245: PDEs and Special Functions (taught by Prof. Dr. Samah El-Tantawy) and the research day event organized by <a class="text-indigo-300 underline" href="https://www.facebook.com/TCCD.ENG/">TCCD</a> </p>
+    </div>
+  </div>
+</div>
+      </main>
+      <div class="bg-gray-700">
+        <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+          <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+            <div class="space-y-5 sm:space-y-4">
+              <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Contributers</h2>
+              <p class="text-xl text-gray-200">These members are the ones who made this project possible with their efforts, time, and knowledge ♥️.</p>
+            </div>
+            <div class="lg:col-span-2">
+              <ul role="list" class="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0">
+                
+                  <li class="sm:py-8">
+                    <div class="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                      <div class="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
+                        <img class="object-cover shadow-lg rounded-lg" src="images/dr.samah.JPG" alt="">
+                      </div>
+                      <div class="sm:col-span-2">
+                        <div class="space-y-4">
+                          <div class="text-lg leading-6 font-medium space-y-1">
+                            <h3 class="text-white">Prof. Dr.</h3>
+                            <p class="text-indigo-200">Samah El-Tantawy</p>
                           </div>
-                        </div>
-                      </section>
-                    </div>
-            
-                    <!-- Right column -->
-                    <div class="grid grid-cols-1 gap-4">
-                      <section aria-labelledby="section-2-title">
-                        <h2 class="sr-only" id="section-2-title">Section title</h2>
-                        <div class="rounded-lg bg-gray-800 overflow-hidden shadow">
-                          <div class="p-6">
-                            <div class="sm:rounded-lg">
-                                <div class="px-4 py-5 sm:p-6">
-                                  <h3 class="text-lg leading-6 font-medium text-white">Parameters</h3>
-                                  <div class="mt-2 max-w-xl text-sm text-gray-400">
-                                    <p>Change any of the following parameters and it will automatically update the simulation.</p>
-                                  </div>
-                                  
-                                  <form name="form-sim-params" class="grid-container">       
-
-                                    <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
-
-                                        <div class="sm:col-span-4">
-                                          <label for="popsize" class="block text-sm font-medium text-gray-300">Population Size</label>
-                                          <div class="mt-1 flex rounded-md shadow-sm">
-                                            <input type="range" name="popsize" id="popsize" min="10" max="500" step="10" value="300" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-                                          </div>
-                                        </div>  
-
-                                        <div class="sm:col-span-4">
-                                            <label for="infectionprobability" class="block text-sm font-medium text-gray-300">Infection Probability</label>
-                                            <div class="mt-1 flex rounded-md shadow-sm">
-                                                <input type="range" name="infectionprobability" id="infectionprobability" min="0.01" max="1" step="0.01" value="1" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="sm:col-span-4">
-                                            <label for="recoverytimeinmillis" class="block text-sm font-medium text-gray-300">Recovery Time (ms)</label>
-                                            <div class="mt-1 flex rounded-md shadow-sm">
-                                                <input type="range" name="recoverytimeinmillis" id="recoverytimeinmillis" min="1000" max="5000" step="100" value="2000" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-                                            </div>
-                                        </div>
-
-                                        <div class="sm:col-span-4">
-                                            <label for="speed" class="block text-sm font-medium text-gray-300">Speed</label>
-                                            <div class="mt-1 flex rounded-md shadow-sm">
-                                                <input type="range" name="speed" id="speed" min="1" max="5" step="0.1" value="2" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-                                            </div>
-                                        </div>
-
-                                        <div class="sm:col-span-4">
-                                            <label for="vaccination" class="block text-sm font-medium text-gray-300">Vaccination Rate</label>
-                                            <div class="mt-1 flex rounded-md shadow-sm">
-                                                <input type="range" name="vaccination" id="vaccination" min="0" max="1" step="0.05" value="0.3" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-                                            </div>
-                                        </div>
-
-                                        <div class="sm:col-span-4">
-                                            <label for="effectiveness" class="block text-sm font-medium text-gray-300">Vaccine Effectiveness</label>
-                                            <div class="mt-1 flex rounded-md shadow-sm">
-                                                <input type="range" name="effectiveness" id="effectiveness" min="1" max="5" step="0.1" value="2" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-                                            </div>
-                                        </div>
-                                                     
-                                    <!-- <div class="formbtn-div flex-container">
-                                        <button id="restartbtn">Restart</button>
-                                        <button id="resetbtn">Reset</button>
-                                    </div> -->
-                                </form>
-                                </div>
-                              </div>
+                          <div class="text-lg">
+                            <p class="text-gray-300">Assistant Professor at Faculty of Engineering, Cairo University. Lecturer of several courses including MTH-2245: PDEs and Special Functions</p>
                           </div>
+                          <ul role="list" class="flex space-x-5">
+                            <li>
+                              <a target="_blank" href="https://www.linkedin.com/in/samah-el-tantawy-b88b8558/" class="text-gray-400 hover:text-gray-500">
+                                <span class="sr-only">LinkedIn</span>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+    </svg>
+                              </a>
+                            </li>
+                          </ul>
                         </div>
-                      </section>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </main>
-            <!-- /End replace -->
+                  </li>                
+              </ul>
+            </div>
           </div>
-        </main>
-      </div> 
-      
+        </div>
+      </div>
     <script src="scripts/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
