@@ -40,8 +40,8 @@
                   <div class="ml-10 flex items-baseline space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <a href="/index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Simulation</a>
-                    <a href="/covid.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">COVID-19</a>
-                    <a href="/sir.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">SIR Model</a>
+                    <a href="/covid.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">COVID-19</a>
+                    <a href="/sir.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">SIR Model</a>
                     <a href="/about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
                   </div>
                 </div>
@@ -86,8 +86,8 @@
             <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="/index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Simulation</a>
-              <a href="/covid.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">COVID-19</a>
-              <a href="/sir.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">SIR Model</a>
+              <a href="/covid.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">COVID-19</a>
+              <a href="/sir.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">SIR Model</a>
               <a href="/about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
               <a href="https://github.com/amirhesham65/sir-simulation" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium flex ">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24">
@@ -102,7 +102,7 @@
       
         <header class="bg-gray-800 shadow">
           <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold tracking-tight text-white">COVID-19</h1>
+            <h1 class="text-3xl font-bold tracking-tight text-white">SIR Model</h1>
           </div>
         </header>
         
@@ -112,38 +112,27 @@
   <div class="relative px-4 sm:px-6 lg:px-8">
     <div class="text-lg max-w-prose mx-auto">
       <h1>
-        <span class="block text-base text-center text-indigo-300 font-semibold tracking-wide uppercase">documenting</span>
-        <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-white sm:text-4xl">Coronavirus disease 2019 (COVID-19)</span>
+        <span class="block text-base text-center text-indigo-300 font-semibold tracking-wide uppercase">modeling</span>
+        <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-white sm:text-4xl">Disease spread analysis wit the SIR model</span>
       </h1>
-      <p class="mt-8 text-xl text-gray-100 leading-8 text-center">Across the generations, humans have suffered from plenty of severe pandemics, and the most relevant in today&apos;s day and age is COVID-19, which is a part of the CORONAvirus family.</p>
+      <p class="mt-8 text-xl text-gray-100 leading-8 text-center">For the purpose of understanding the behavior of this serious pandemic, it has become greatly significant to simulate and model the virus infection development process to accurately predict the effect of the virus spread over time, and how it will grow and mutate, and whether it will be more fierce or mild and this will give us a better view of the way we should handle the virus in the future and mitigate the impact of spread.</p>
     </div>
     <div class="mt-6 prose prose-indigo prose-lg text-gray-100 mx-auto">
-      <p>Coronavirus disease 2019 (COVID-19) , which is a highly contagious viral infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was acknowledged by the WHO (World Health Organisation) as a pandemic in March 2020, it has had a catastrophic effect on the world’s demographics all around the world, and it’s clearly the most consequential global health crisis in the recent years.</p>
+      <p>This can be reached only by an efficient model describing the behavior of the disease over time with some parameters to depend on. So, for modeling the infections of COVID-19 disease, we need to use the <b>Kermack-McKendrick SIR Model</b>, in which they model the total population classified into three categories S, I, and R: where Susceptible (S), are healthy individuals that are free of the disease but are susceptible to the infection by the Infectious (I), Infectious are the ones who tested positive for the disease, and then for simplicity after a period of time considered Recovered (R), as it’s assumed that they gained permanent immunity.</p>
       <br>
-      <p>The virus has originated from Wuhan, China, from which it spread to all the corners of the globe like a fierce wildfire,resulting in a total number of cases of 19 million around the world, with 700,000 deaths in 213 different countries and territories.</p>
-      <br>
-      <p>And somehow, We all have been affected by COVID-19 pandemic, and it has severe effects on many aspects of life such as; health and environments. However, the impact of the pandemic and its effects are felt differently depending on our status as individuals and as parts of society.</p>
-      <br>
-      <p>By all means, covid-19 was like a sudden disaster for the whole world. Its rapid spread has revealed a failure of global domestic preparedness and implementation, a lack of coordination across nations.</p>
-      <br>
+
+
       <figure>
-        <img class="w-full rounded-lg" src="/images/casesgraph.png" alt="" width="1310" height="873">
-        <figcaption class="text-sm text-gray-400 text-center py-2">All time new cases reported <a class="text-indigo-400" href="https://ourworldindata.org/explorers/coronavirus-data-explorer">(source)</a></figcaption>
+        <img class="w-full rounded-lg" src="/images/sir.png" alt="" width="1310" height="873">
+        <figcaption class="text-sm text-gray-400 text-center py-2">SIR model flow diagram</figcaption>
       </figure>
+
+
+      <p>The SIR model can provide us with insights and predictions of the spread of the virus in communities that the recorded data alone cannot. And it’s represented by a few ODEs, including 2 main parameters which are the infectious rate (β) and the recovery rate (γ) .</p>
       <br>
-      <p>And the outbreak of COVID-19 has proven to be a world wide unprecedented catastrophe;</p>
+      <p>The assumptions made are that the Population (N) is a homogeneous mix of the infected I and susceptible S, where mere contact causes the spread of the disease, and for simplicity, the population is placed in a relatively small confined space, there are no immigrants or births in the population. Also assuming that once a person is Recovered R, they are no longer in the scope of the population being studied because they won’t get reinfected (or are dead). The infectious people are assumed to be spreading the disease for a constant time t before they are removed from the pool and considered Recovered (i.e there’s a fixed infection rate per day and fixed recovery time). In this particular scenario, the number of susceptible people would decay monotonically over time to zero.</p>
       <br>
-      <ul class="list-disc px-12">
-        <li>As the virus resulted in a devastating death toll and economic harm, as there is a widespread loss to humans, materials.</li>
-        <br>
-        <li>It inflicted billion of lives across the globe in many ways eg. physically, psychologically, socially, and had a serious disruption of social and community function.</li>
-      </ul>
-      <br>
-      <p>For sure this pandemic has demonstrated the difficulty of responding effectively to an emerging outbreak, which is a serious issue in our world. No one can deny that covid-19 is by far the most terrible thing that has happened to the globe in the past few years, it’s a word that no one would like to hear as it’s associated with the feeling of fear, panic and anxiety.</p>
-      <br>
-      <p>And as it could yet evolve in unanticipated ways, we should all take into consideration that the right preparation and early execution are essential in detecting, containing, and rapidly responding to and mitigating the spread of potentially hazardous infectious diseases.</p>
-      <br>
-      
+      <a class="text-indigo-300" href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology">Learn more about SIR and compartmental models in epidemiology</a>
     </div>
   </div>
 </div>
