@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,8 +26,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
-<body class="bg-gray-700 h-full">
-    <div class="h-full">
+<body class="bg-gray-700">
         <nav class="bg-gray-800">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
@@ -40,8 +39,8 @@
                 <div class="hidden md:block">
                   <div class="ml-10 flex items-baseline space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="/index.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Simulation</a>
-                    <a href="/covid.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">COVID-19</a>
+                    <a href="/index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Simulation</a>
+                    <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">COVID-19</a>
                     <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">SIR Model</a>
                     <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
                   </div>
@@ -86,11 +85,11 @@
           <div class="hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Simulation</a>
-              <a href="/covid.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">COVID-19</a>
+              <a href="/index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Simulation</a>
+              <a href="/covid.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">COVID-19</a>
               <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">SIR Model</a>
               <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-              <a href="https://github.com/amirhesham65/sir-simulation" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium flex ">
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium flex ">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                 </svg>
@@ -103,107 +102,52 @@
       
         <header class="bg-gray-800 shadow">
           <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold tracking-tight text-white">Simulation</h1>
+            <h1 class="text-3xl font-bold tracking-tight text-white">COVID-19</h1>
           </div>
         </header>
-        <main>
-          <div class="mx-auto max-w-8xl py-6">
-            <!-- Replace with your content -->
-            <main class="pb-8">
-                <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                  <h1 class="sr-only">Page title</h1>
-                  <!-- Main 3 column grid -->
-                  <div class="grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8">
-                    <!-- Left column -->
-                    <div class="grid grid-cols-1 gap-4 lg:col-span-2">
-                      <section aria-labelledby="section-1-title">
-                        <h2 class="sr-only" id="section-1-title">Section title</h2>
-                        <div class="rounded-lg bg-gray-800 overflow-hidden shadow w-full">
-                          <div class="p-6">
-                            <div id="sirsim-container">
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-            
-                    <!-- Right column -->
-                    <div class="grid grid-cols-1 gap-4">
-                      <section aria-labelledby="section-2-title">
-                        <h2 class="sr-only" id="section-2-title">Section title</h2>
-                        <div class="rounded-lg bg-gray-800 overflow-hidden shadow">
-                          <div class="p-6">
-                            <div class="sm:rounded-lg">
-                                <div class="px-4 py-5 sm:p-6">
-                                  <h3 class="text-lg leading-6 font-medium text-white">Parameters</h3>
-                                  <div class="mt-2 max-w-xl text-sm text-gray-400">
-                                    <p>Change any of the following parameters and it will automatically update the simulation.</p>
-                                  </div>
-                                  
-                                  <form name="form-sim-params" class="grid-container">       
-
-                                    <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
-
-                                        <div class="sm:col-span-4">
-                                          <label for="popsize" class="block text-sm font-medium text-gray-300">Population Size</label>
-                                          <div class="mt-1 flex rounded-md shadow-sm">
-                                            <input type="range" name="popsize" id="popsize" min="10" max="500" step="10" value="300" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-                                          </div>
-                                        </div>  
-
-                                        <div class="sm:col-span-4">
-                                            <label for="infectionprobability" class="block text-sm font-medium text-gray-300">Infection Probability</label>
-                                            <div class="mt-1 flex rounded-md shadow-sm">
-                                                <input type="range" name="infectionprobability" id="infectionprobability" min="0.01" max="1" step="0.01" value="1" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="sm:col-span-4">
-                                            <label for="recoverytimeinmillis" class="block text-sm font-medium text-gray-300">Recovery Time (ms)</label>
-                                            <div class="mt-1 flex rounded-md shadow-sm">
-                                                <input type="range" name="recoverytimeinmillis" id="recoverytimeinmillis" min="1000" max="5000" step="100" value="2000" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-                                            </div>
-                                        </div>
-
-                                        <div class="sm:col-span-4">
-                                            <label for="speed" class="block text-sm font-medium text-gray-300">Speed</label>
-                                            <div class="mt-1 flex rounded-md shadow-sm">
-                                                <input type="range" name="speed" id="speed" min="1" max="5" step="0.1" value="2" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-                                            </div>
-                                        </div>
-
-                                        <div class="sm:col-span-4">
-                                            <label for="vaccination" class="block text-sm font-medium text-gray-300">Vaccination Rate</label>
-                                            <div class="mt-1 flex rounded-md shadow-sm">
-                                                <input type="range" name="vaccination" id="vaccination" min="0" max="1" step="0.05" value="0.3" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-                                            </div>
-                                        </div>
-
-                                        <div class="sm:col-span-4">
-                                            <label for="effectiveness" class="block text-sm font-medium text-gray-300">Vaccine Effectiveness</label>
-                                            <div class="mt-1 flex rounded-md shadow-sm">
-                                                <input type="range" name="effectiveness" id="effectiveness" min="1" max="5" step="0.1" value="2" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-                                            </div>
-                                        </div>
-                                                     
-                                    <!-- <div class="formbtn-div flex-container">
-                                        <button id="restartbtn">Restart</button>
-                                        <button id="resetbtn">Reset</button>
-                                    </div> -->
-                                </form>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-                </div>
-              </main>
-            <!-- /End replace -->
-          </div>
-        </main>
-      </div> 
+        
+      <main class="max-w-3xl mx-auto">
+<div class="relative py-16 overflow-hidden">
+  
+  <div class="relative px-4 sm:px-6 lg:px-8">
+    <div class="text-lg max-w-prose mx-auto">
+      <h1>
+        <span class="block text-base text-center text-indigo-300 font-semibold tracking-wide uppercase">documenting</span>
+        <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-white sm:text-4xl">Coronavirus disease 2019 (COVID-19)</span>
+      </h1>
+      <p class="mt-8 text-xl text-gray-100 leading-8 text-center">Across the generations, humans have suffered from plenty of severe pandemics, and the most relevant in today&apos;s day and age is COVID-19, which is a part of the CORONAvirus family.</p>
+    </div>
+    <div class="mt-6 prose prose-indigo prose-lg text-gray-100 mx-auto">
+      <p>Coronavirus disease 2019 (COVID-19) , which is a highly contagious viral infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was acknowledged by the WHO (World Health Organisation) as a pandemic in March 2020, it has had a catastrophic effect on the world’s demographics all around the world, and it’s clearly the most consequential global health crisis in the recent years.</p>
+      <br>
+      <p>The virus has originated from Wuhan, China, from which it spread to all the corners of the globe like a fierce wildfire,resulting in a total number of cases of 19 million around the world, with 700,000 deaths in 213 different countries and territories.</p>
+      <br>
+      <p>And somehow, We all have been affected by COVID-19 pandemic, and it has severe effects on many aspects of life such as; health and environments. However, the impact of the pandemic and its effects are felt differently depending on our status as individuals and as parts of society.</p>
+      <br>
+      <p>By all means, covid-19 was like a sudden disaster for the whole world. Its rapid spread has revealed a failure of global domestic preparedness and implementation, a lack of coordination across nations.</p>
+      <br>
+      <figure>
+        <img class="w-full rounded-lg" src="/images/casesgraph.png" alt="" width="1310" height="873">
+        <figcaption class="text-sm text-gray-400 text-center py-2">All time new cases reported <a class="text-indigo-400" href="https://ourworldindata.org/explorers/coronavirus-data-explorer">(source)</a></figcaption>
+      </figure>
+      <br>
+      <p>And the outbreak of COVID-19 has proven to be a world wide unprecedented catastrophe;</p>
+      <br>
+      <ul class="list-disc px-12">
+        <li>As the virus resulted in a devastating death toll and economic harm, as there is a widespread loss to humans, materials.</li>
+        <br>
+        <li>It inflicted billion of lives across the globe in many ways eg. physically, psychologically, socially, and had a serious disruption of social and community function.</li>
+      </ul>
+      <br>
+      <p>For sure this pandemic has demonstrated the difficulty of responding effectively to an emerging outbreak, which is a serious issue in our world. No one can deny that covid-19 is by far the most terrible thing that has happened to the globe in the past few years, it’s a word that no one would like to hear as it’s associated with the feeling of fear, panic and anxiety.</p>
+      <br>
+      <p>And as it could yet evolve in unanticipated ways, we should all take into consideration that the right preparation and early execution are essential in detecting, containing, and rapidly responding to and mitigating the spread of potentially hazardous infectious diseases.</p>
+      <br>
+      
+    </div>
+  </div>
+</div>
+      </main>
       
     <script src="scripts/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
