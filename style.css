@@ -8,3 +8,14 @@ canvas {
     opacity: 0.5;
 }
 
+.text-red {
+    color: rgba(255, 0, 0, 0.701);
+}
+
+.text-yellow {
+    color: rgba(255, 255, 0, 0.707);
+}
+
+.text-green {
+    color: rgba(0, 128, 0, 0.597);
+}
