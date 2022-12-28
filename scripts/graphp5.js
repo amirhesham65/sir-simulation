@@ -6,10 +6,10 @@ let graphSketch = (p) => {
   // canvas parameters
   let canvas; // p5js canvas
   let defaultHeight = 200;
-  let mobWidth = screen.availWidth - 8 * 2 * 2;
+  let mobWidth = screen.availWidth - 8 * 4 * 2.5;
   let graphCanvasSize =
     screen.availWidth > 672
-      ? { width: 640, height: defaultHeight }
+      ? { width: 340, height: defaultHeight }
       : { width: mobWidth, height: defaultHeight };
 
   let lineDrawer;
@@ -25,7 +25,7 @@ let graphSketch = (p) => {
 
   /** Reset and restart the graph. */
   p.reset = () => {
-    p.background(255);
+    p.background(12);
     currentXCoordinatePixel = 0;
     prev_x = 0;
     prev_y = {
